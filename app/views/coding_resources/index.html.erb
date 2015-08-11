@@ -1,0 +1,10 @@
+<h1>All the resources</h1>
+
+<ul>
+  <% @coding_resources.each do |coding_resource| %>
+    <li>
+      <%= link_to coding_resource.title, coding_resource_path(coding_resource) %>
+      , level: <%= coding_resource.level.title %>
+    </li>
+  <% end %>
+</ul>
