@@ -8,3 +8,7 @@
     </li>
   <% end %>
 </ul>
+
+<% if current_admin %>
+  <%= link_to "Create new resource", new_coding_resource_path %>
+<% end %>
